@@ -97,13 +97,17 @@ nav .bi {
     display: none;
     position: fixed;
     background: #f44336;
-    height: 100vh;
-    width: -200px;
+    height: 50vh;
+    width: 150px;
     top: 0;
     right: 0px;
     text-align: left;
     z-index: 2;
-    transition: 1s;
+  }
+  .nav-links ul li a:hover {
+    color: rgb(61, 218, 40);
+    font-size: 14px;
+    transition: 0.2s ease-in-out;
   }
   nav .bi {
     display: block;
