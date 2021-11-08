@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website Design 2</title>
+    <link rel="stylesheet" href="../style.css" />
+
+    <!-- My Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" />
+  </head>
+  <body>
+    <!-- Home -->
+
+    <section class="sub-header">
+      <nav>
+        <a href=""><img src="../img/logo.png" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../about/about.html">ABOUT</a></li>
+            <li><a href="../courses/courses.html">COURSE</a></li>
+            <li><a href="../blog/blog.html">BLOG</a></li>
+            <li><a href="../contact/contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="bi bi-list" onclick="showMenu()"></i>
+      </nav>
+      <h1 class="title1">Our Certificate & Online Programs For 2021</h1>
+    </section>
+
+    <!-- end of Home -->
+
+    <!-- blog page content -->
+    <section class="blog-content">
+      <div class="row">
+        <div class="blog-left">
+          <img src="../img/certificate.jpg" alt="certificate" />
+          <h2>Our Certificate & Online Programs For 2021</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis porro, illo optio animi repudiandae impedit omnis sint aut. Voluptatum, illum explicabo placeat cupiditate ratione accusantium eaque. Amet excepturi enim
+            quod.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ipsum consequatur vitae eos sapiente expedita id, voluptatem tempore, dolor fuga quasi vel hic asperiores exercitationem. Neque, nulla aspernatur nam optio
+            laudantium hic doloribus, ad corrupti atque vitae non accusantium dolor?
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam animi, deserunt asperiores mollitia, a ad aliquid, repudiandae adipisci beatae consequuntur nam illum officia. Dicta delectus laborum modi corporis
+            deserunt qui quos sequi voluptatibus aliquam officiis nesciunt similique impedit harum reprehenderit, iusto ratione molestias exercitationem iure!
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis eveniet excepturi odio ipsa, accusantium quidem labore ducimus illum voluptas vel voluptatum culpa consequuntur, aliquam quia eius aliquid corrupti
+            numquam inventore qui! Fugiat deserunt nesciunt dignissimos sit ipsum aliquid, aliquam temporibus veritatis ab expedita obcaecati fugit harum nobis enim cum modi, doloremque excepturi odit odio perspiciatis molestias!
+            Quisquam natus reiciendis quas.
+          </p>
+
+          <div class="comment-box">
+            <h3>Leave a comment</h3>
+
+            <form class="comment-form">
+              <input type="text" placeholder="Enter Name" />
+              <input type="email" placeholder="Email" />
+              <textarea rows="5" placeholder="Your comment"></textarea>
+              <button type="submit" class="hero-btn red-btn">Post Comment</button>
+            </form>
+          </div>
+        </div>
+        <div class="blog-right">
+          <h3>post categories</h3>
+          <div>
+            <span>Business Analytics</span>
+            <span>21</span>
+          </div>
+          <div>
+            <span>Data Science</span>
+            <span>28</span>
+          </div>
+          <div>
+            <span>Machine learning</span>
+            <span>15</span>
+          </div>
+          <div>
+            <span>computer Science</span>
+            <span>34</span>
+          </div>
+          <div>
+            <span>AutoCAD</span>
+            <span>42</span>
+          </div>
+          <div>
+            <span>Journalism</span>
+            <span>22</span>
+          </div>
+          <div>
+            <span>Commerce</span>
+            <span>30</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of content -->
+
+    <!-- Footer -->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia expedita architecto incidunt earum <br />
+        adipisci voluptas, eaque a libero nihil laboriosam?
+      </p>
+      <div class="icons">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-telegram"></i>
+      </div>
+      <p class="made">Made with <i class="bi bi-heart"></i> by Descx</p>
+    </section>
+
+    <!-- end of footer -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- JS For Toggle Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function hideMenu() {
+        navLinks.style.display = "none";
+      }
+      function showMenu() {
+        navLinks.style.display = "block";
+      }
+    </script>
+  </body>
+</html>

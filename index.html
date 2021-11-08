@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- My Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" />
+  </head>
+  <body>
+    <!-- Home -->
+
+    <section class="header">
+      <nav>
+        <a href=""><img src="img/logo.png" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about/about.html">ABOUT</a></li>
+            <li><a href="courses/courses.html">COURSE</a></li>
+            <li><a href="blog/blog.html">BLOG</a></li>
+            <li><a href="contact/contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="bi bi-list" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>World's Bigges University</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nam repellat libero dolore in obcaecati porro <br />
+          itaque numquam animi. Explicabo, facere. Exercitationem a iusto velit!
+        </p>
+        <a href="#" class="hero-btn">Visit Us To Know More</a>
+      </div>
+    </section>
+
+    <!-- end of Home -->
+
+    <!-- Course -->
+
+    <section class="course">
+      <h1>Courses We Offer</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, molestiae.</p>
+
+      <div class="row pt-5 justify-content-between pb-5">
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi alias reprehenderit quae, aliquam ratione repellat ea aut, ipsum aliquid dolore porro delectus ad earum facere?</p>
+        </div>
+        <div class="course-col ml-3">
+          <h3>Degree</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi alias reprehenderit quae, aliquam ratione repellat ea aut, ipsum aliquid dolore porro delectus ad earum facere?</p>
+        </div>
+        <div class="course-col">
+          <h3>Post Graduation</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi alias reprehenderit quae, aliquam ratione repellat ea aut, ipsum aliquid dolore porro delectus ad earum facere?</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- end of Course -->
+
+    <!-- Campus -->
+    <section class="campus">
+      <h1>Our Global Campus</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, magni?</p>
+
+      <div class="row justify-content-between">
+        <div class="campus-col">
+          <img src="img/london.png" alt="London" />
+          <div class="layer">
+            <h3>LONDON</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="img/newyork.png" alt="New York" />
+          <div class="layer">
+            <h3>New York</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="img/washington.png" alt="washington" />
+          <div class="layer">
+            <h3>washington</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end of Campus -->
+
+    <!-- Facilities -->
+
+    <section class="facilities">
+      <h1>Our Facilities</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, dolores!</p>
+
+      <div class="row justify-content-evenly">
+        <div class="facilities-col">
+          <img src="img/library.png" alt="library" />
+          <h3>World Class Library</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, cumque.</p>
+        </div>
+        <div class="facilities-col">
+          <img src="img/basketball.png" alt="library" />
+          <h3>Large Play Ground</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, cumque.</p>
+        </div>
+        <div class="facilities-col">
+          <img src="img/cafeteria.png" alt="library" />
+          <h3>Tasty and Healthy Food</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, cumque.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- end of Facilities -->
+
+    <!-- Testimonials -->
+
+    <section class="testimonials">
+      <h1>What Our Student Says</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, voluptates!</p>
+
+      <div class="row pt-5 justify-content-between">
+        <div class="testimonials-col">
+          <img src="img/user1.jpg" alt="Profile" />
+          <div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita officia rerum nulla porro, amet ratione sapiente aperiam nesciunt voluptatum consequuntur obcaecati iure reiciendis suscipit veritatis?</p>
+            <h3>Tipang Goreng</h3>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+          </div>
+        </div>
+        <div class="testimonials-col">
+          <img src="img/user2.jpg" alt="Profile" />
+          <div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita officia rerum nulla porro, amet ratione sapiente aperiam nesciunt voluptatum consequuntur obcaecati iure reiciendis suscipit veritatis?</p>
+            <h3>Tipang Rebus</h3>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end of Testimonials -->
+
+    <!-- Call To Action -->
+
+    <section class="cta">
+      <h1>
+        Enroll for our various online courses <br />
+        Anyewhere from the World
+      </h1>
+      <a href="#" class="hero-btn">Contact Us</a>
+    </section>
+
+    <!-- end of CTA -->
+
+    <!-- Footer -->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia expedita architecto incidunt earum <br />
+        adipisci voluptas, eaque a libero nihil laboriosam?
+      </p>
+      <div class="icons">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-telegram"></i>
+      </div>
+      <p class="made">Made with <i class="bi bi-heart"></i> by Descx</p>
+    </section>
+
+    <!-- end of footer -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- JS For Toggle Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function hideMenu() {
+        navLinks.style.display = "none";
+      }
+      function showMenu() {
+        navLinks.style.display = "block";
+      }
+    </script>
+  </body>
+</html>

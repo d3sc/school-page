@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website Design 2</title>
+    <link rel="stylesheet" href="../style.css" />
+
+    <!-- My Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css" />
+  </head>
+  <body>
+    <!-- Home -->
+
+    <section class="sub-header">
+      <nav>
+        <a href=""><img src="../img/logo.png" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../about/about.html">ABOUT</a></li>
+            <li><a href="../courses/courses.html">COURSE</a></li>
+            <li><a href="../blog/blog.html">BLOG</a></li>
+            <li><a href="../contact/contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="bi bi-list" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+
+    <!-- end of Home -->
+
+    <!-- Contact Us -->
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.6875845538036!2d106.71521824184012!3d-6.34543848404498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e582501b86cb%3A0xe17c81c2758ace13!2sSMK%20Letris%20Indonesia%202%20%26%20SMK%20Kesehatan%20Letris%20Indonesia%202!5e0!3m2!1sid!2sid!4v1636271008082!5m2!1sid!2sid"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="bi bi-house-door-fill"></i>
+            <span>
+              <h5>Jl. Siliwangi No.55</h5>
+              <span>Pd. Benda, Kec. Pamulang, Kota Tangerang Selatan, Banten 15416</span>
+            </span>
+          </div>
+          <div>
+            <i class="bi bi-telephone-fill"></i>
+            <span>
+              <h5>+622170096139</h5>
+              <span>Monday to Saturday,7AM to 5PM</span>
+            </span>
+          </div>
+          <div>
+            <i class="bi bi-envelope"></i>
+            <span>
+              <h5>info@School.com</h5>
+              <span>Send Email us for your Question</span>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="form-handler.php" method="post">
+            <input type="text" name="name" placeholder="Enter your name" required />
+            <input type="email" name="email" placeholder="Enter email address" required />
+            <input type="text" name="subject" placeholder="Enter your Subject" required />
+            <textarea rows="8" name="message" placeholder="Message" required></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia expedita architecto incidunt earum <br />
+        adipisci voluptas, eaque a libero nihil laboriosam?
+      </p>
+      <div class="icons">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter"></i>
+        <i class="bi bi-telegram"></i>
+      </div>
+      <p class="made">Made with <i class="bi bi-heart"></i> by Descx</p>
+    </section>
+
+    <!-- end of footer -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- JS For Toggle Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function hideMenu() {
+        navLinks.style.display = "none";
+      }
+      function showMenu() {
+        navLinks.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
